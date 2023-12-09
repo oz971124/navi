@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title%}
+Title - LOG-IN
+{% endblock %}
+
+{% block description%}
+
+
+<!-- log-in input form -->
+<form method="post">
+    <h1>LOG-IN</h1>
+    <div class="mb-3">
+        <label for="InputEmail1" class="form-label">이메일</label>
+        <input name="email" type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">가입한 이메일을 입력하세요</div>
+    </div>
+    <div class="mb-3">
+        <label for="InputPassword1" class="form-label">비밀번호 입력</label>
+        <input name="password1" type="password" class="form-control" id="InputPassword1">
+    </div>
+    <button type="submit" class="btn btn-primary">제출</button>
+</form>
+<!-- ./log-in input form -->
+
+{% endblock%}

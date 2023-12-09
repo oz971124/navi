@@ -1,15 +1,8 @@
-from flask import Flask, render_template
+from navi import create_app
 
-app = Flask(__name__)
+# Create App
+app = create_app()
 
-@app.route('/')
-def index() :
-    return render_template('index.html')
-
-@app.route('/page')
-def page() :
-    return render_template('page.html')
-
-
+# run
 if __name__ == "__main__" :
     app.run(debug = True)
