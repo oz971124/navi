@@ -1,15 +1,13 @@
 {% extends "base.html" %}
-
-{% block title%}
-Title - LOG-IN
+{% block title %}
+Title - Sign In
 {% endblock %}
 
-{% block description%}
+{% block content %}
 
-
-<!-- log-in input form -->
+<!-- sign in form -->
 <form method="post">
-    <h1>LOG-IN</h1>
+    <h2 align="center">Sign In</h2>
     <div class="mb-3">
         <label for="InputEmail1" class="form-label">이메일</label>
         <input name="email" type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
@@ -21,6 +19,7 @@ Title - LOG-IN
     </div>
     <button type="submit" class="btn btn-primary">제출</button>
 </form>
-<!-- ./log-in input form -->
+<!-- ./sign in form -->
 
-{% endblock%}
+{% endblock %}
+
